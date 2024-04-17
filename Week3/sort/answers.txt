@@ -1,0 +1,11 @@
+sort1 uses: selection
+
+How do you know?: Because this algorithm takes a simillar amount of time to sort both the random and sorted number lists. This algotrithm also took a longer time when compared to sort3.
+
+sort2 uses: bubble
+
+How do you know?: Because this algorithm takes a longer time to sort the randomly arranged numbers compared to the already sorted ones.
+
+sort3 uses: merge
+
+How do you know?: Because this algorithm takes a simillar amount of time to sort both the random and sorted number lists. This algotrithm also took a shorter time when compared to sort1.

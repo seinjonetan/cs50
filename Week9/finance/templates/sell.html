@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock Quote Request
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <select name="symbol">
+            <option disabled selected>Stock</option>
+            {% for stock in stocks %}
+            <option value="{{ stock['stock'] }}">{{ stock['stock'] }}</option>
+            {% endfor %}
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="shares" name="shares" placeholder="Number of Shares" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}

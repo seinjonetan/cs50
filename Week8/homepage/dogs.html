@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+    <head>
+        <title>Dogs!</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="bootstrap-styles.css" rel="stylesheet">
+        <script type="text/javascript" src="menu.js"></script>
+        <script type="text/javascript" src="quiz.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Man's Best Friend!</h1>
+        </div>
+        <div class="menu">
+            <button class="menu_button"><a href="index.html" class="menu_link">Home</a></button>
+            <button class="menu_button"><a href="dogs.html" class="menu_link">Dogs</a></button>
+            <button class="menu_button"><a href="cats.html" class="menu_link">Cats</a></button>
+            <hr>
+        </div>
+        <div>
+            <img alt="dog" src="Dog.jpg" class="img-fluid rounded">
+            <hr>
+        </div>
+        <div class="video">
+            <iframe width="1280" height="1080" src="https://www.youtube.com/watch?v=x5nn3EuYHwQ?autoplay=1&mute=1"></iframe>
+            <hr>
+        </div>
+        <div class="text_body">
+            <h2>A Short Section On Dogs</h2><br>
+            <h3>On The History Of Dogs</h3><br>
+            <p>All dogs descend from a species of wolf, but not the gray wolf (Canis lupus), like many people assume. In fact, DNA evidence suggests that the now-extinct wolf ancestor to modern dogs was Eurasian. However, scientists are still working to understand exactly what species gave rise to dogs.</p>
+            <p>When dogs broke off from their wild ancestors is also a matter of mystery, but genetics suggest that it occurred between 15,000 and 30,000 years ago.</p>
+            <p>While it’s impossible to say exactly how a wild wolf species became a domesticated dog, most scientists believe the process happened gradually as wolves became more comfortable with humans. Perhaps wolves started down this path simply by eating human scraps. Many generations later, humans might have encouraged wolves to stay near by actively feeding them. Later still, those wolves may have been welcomed into the human home and eventually bred to encourage certain traits. All of this is thought to have unfolded over thousands of years.</p><br>
+            <h3>A Poem On Dogs</h3>
+        </div>
+        <div class="poem">
+            Sitting in an empty house<br>
+            with a dog from the Mexican Circus!<br>
+            O Daisy, embrace is my only pleasure.<br>
+            Holding and hugging my friends. Education.<br>
+            A wave of eucalyptus. Warm granite.<br>
+            These are the things I have in my heart.<br>
+            Heart and skills, there’s nothing else.<br>
+        </div>
+        <hr>
+            <h2>Reasons Why You Should Own A Dog</h2><br>
+        <div class="list">
+            <ul>
+                <li><b>They Are Cute.</b></li>
+                <li>That's All The Reason You Need</li>
+            </ul>
+            <hr>
+        </div>
+        <div class="container-md">
+            <div class="quiz">
+                <h2>Quiz Section</h2><br>
+                <h3>How Long Should Dogs Live?</h3><br>
+                <button id="wrong" class="multi_answer">12 Years</button>
+                <button id="wrong" class="multi_answer">24 Years</button>
+                <button id="wrong" class="multi_answer">100 Years</button>
+                <button id="right" class="multi_answer">Forever</button>
+                <br>
+                <p id="multi_feedback"></p>
+                <br>
+                <h3>What's your favourite breed of dog?</h3><br>
+            </div>
+                <form class="form-floating col mb-3">
+                    <input type="text" class="form-control" placeholder="eg. Husky" id="favourite_dog">
+                    <label for ="floatingInputValue">Favourite Dog Breed</label>
+                    <button id="check" class="multi_answer">submit</button>
+                    <br>
+                    <p id="free_feedback"></p>
+                </form>
+            <hr>
+        </div>
+        <div class="footer">
+            For cat lovers, <a href="cats.html">click here</a> to check out the cat page!
+        </div>
+    </body>
+</html>

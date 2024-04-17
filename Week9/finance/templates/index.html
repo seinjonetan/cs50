@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Current Holdings
+{% endblock %}
+
+{% block main %}
+<table>
+    <thead>
+        <tr>
+            <th>Current Cash Balance</th>
+            <th>Total Holdings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ person[0].cash|round(2) }}</td>
+            <td>{{ total_holdings|round(2) }}</td>
+        </tr>
+    </tbody>
+</table>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Number of Shares Owned</th>
+                <th>Price</th>
+                <th>Total Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock_name, stock_info in info.items() %}
+            <tr>
+                <td>{{ stock_info.name }}</td>
+                <td>{{ stock_name }}</td>
+                <td>{{ stock_info.remain }}</td>
+                <td>{{ stock_info.price }}</td>
+                <td>{{ stock_info.price * stock_info.remain }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

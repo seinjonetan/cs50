@@ -1,0 +1,4 @@
+I would characterise the user's aura as liking dancable songs that are fairly high energy. Though the songs might skew on the more negative side due to teh low valence.
+
+The sample size is small enough that extreme outliers in each variable might skew the data and not properly reflect the user's usual listening habits.
+It may be a good idea to clean up the data by excluding points that may lie too far outside the standard deviation of the variables. Ie exclude the outliers from being counted in the average.

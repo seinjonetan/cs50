@@ -1,0 +1,103 @@
+body {
+    background-color: #80b5cc;
+    color: #212529;
+    font-family:'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    background-color: #2acaea;
+}
+
+.menu {
+    padding: 0.5rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.menu_link {
+    color: #212529;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.menu_button {
+    background-color: #416fec;
+    border: 1rem solid transparent;
+    border-radius: 0.1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 2;
+    padding: 0.375rem 2rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+.menu_button:hover {
+    background-color: #2acaea;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.text_body {
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.poem {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.quiz {
+    text-align: center;
+}
+
+.quiz:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.multi_answer {
+    background-color: #416fec;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+.multi_answer:hover {
+    background-color: #2acaea;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+    border-radius: 0.25rem;
+}
+
+input[type="text"] {
+    line-height: 1.8;
+    width: 25%;
+    border-radius: 0.25rem;
+}
+
+input[type="text"]:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.footer {
+    font-style: italic;
+    text-align: center;
+}

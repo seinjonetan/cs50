@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Trading history
+{% endblock %}
+
+{% block main %}
+<div class="section">
+    <h2>Purchases</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Stock</th>
+                <th>Shares</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for time in purchase %}
+                <tr>
+                    <td>{{ time.time }}</td>
+                    <td>{{ time.stock }}</td>
+                    <td>{{ time.shares }}</td>
+                    <td>{{ time.price }}</td>
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="section">
+    <h2>Sales</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Stock</th>
+                <th>Shares</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for time in sale %}
+                <tr>
+                    <td>{{ time.time }}</td>
+                    <td>{{ time.symbol }}</td>
+                    <td>{{ time.shares }}</td>
+                    <td>{{ time.price }}</td>
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
